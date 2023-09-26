@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<title>Julien HAMMER - PORTFOLIO</title>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="description" content="The Curriculum Vitae of Julien HAMMER."/>
+	<meta charset="UTF-8">
+	<script src="static/js/main.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="static/css/icon-font.css">
+	<link type="text/css" rel="stylesheet" href="static/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+{% load static %}
+<body>
+<div id="cv" class="">
+
+	<div class="">
+
+		<div class="navigation">
+			<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+			<label for="navi-toggle" class="navigation__button">
+				<span class="navigation__icon">&nbsp;</span>
+			</label>
+
+				<div class="navigation__background" id="nav-background">&nbsp;</div>
+
+				<nav class="navigation__nav" id="element__nav">
+					<ul class="navigation__list">
+						<li class="navigation__item"><a onclick="hideNavigation__bar()" href="#header" class="navigation__link"><span>01</span>Julien HAMMER</a></li>
+						<li class="navigation__item"><a onclick="hideNavigation__bar()" href="#skills" class="navigation__link"><span>02</span>Compétences</a></li>
+						<li class="navigation__item"><a onclick="hideNavigation__bar()" href="#experience" class="navigation__link"><span>03</span>Expérience</a></li>
+						<li class="navigation__item"><a onclick="hideNavigation__bar()" href="#education" class="navigation__link"><span>04</span>Formation</a></li>
+						<li class="navigation__item"><a onclick="hideNavigation__bar()" href="#section-project-web" class="navigation__link"><span>05</span>Projets réalisés en web</a></li>
+						<li class="navigation__item"><a onclick="hideNavigation__bar()" href="#contact" class="navigation__link"><span>06</span>Me contacter</a></li>
+					</ul>
+				</nav>
+
+		</div>
+
+		<header class="header" id="header">
+			<div class="header__logo-box">
+				<img src="static/images/JHgris.png" alt="Logo" class="header__logo">
+			</div>
+
+			<div class="header__text-box">
+				<h1 class="heading-primary">
+					<span class="heading-primary--main">Julien HAMMER</span>
+					<span class="heading-primary--sub">Developpeur Web Junior</span>
+				</h1>
+
+<!--				<a href="https://github.com/rouge13/gitRed" class="btn btn&#45;&#45;white btn&#45;&#45;animated" target="_blank">GitHub</a>-->
+				<a href="static/docs/HAMMER%20Julien%20CV%20Developpeur%20web%20junior.pdf" class="btn btn--white btn--animated" target="_blank">Télécharger CV en PDF</a>
+
+			</div>
+		</header>
+
+		<main>
+			<section class="section-skills" id="skills">
+
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">Compétences</h2>
+				</div>
+				<div class="row">
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<h3 class="card__text u-margin-bottom-medium">FRONT-END</h3>
+								<img srcset="static/logo/front1x.JPG 148w, static/logo/front2x.JPG 296w"
+									 sizes="(max-width: 1100px) 14vw, (max-width: 600px) 25vw, 296px"
+									 alt="front"
+									 class="card__photo--front"
+									 src="static/logo/front1x.JPG">
+							</div>
+							<div class="card__side card__side--back">
+								<div class="card__cta">
+									<ul class="card__skills">
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/HTML5" class="card__skills--link" target="_blank"><span>01</span>HTML 5</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/JavaScript" class="card__skills--link" target="_blank"><span>02</span>JavaScript</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/Bootstrap" class="card__skills--link" target="_blank"><span>03</span>Bootstrap</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/JQuery" class="card__skills--link" target="_blank"><span>04</span>jQuery</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/Ajax_(informatique)" class="card__skills--link" target="_blank"><span>05</span>AJAX</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<h3 class="card__text u-margin-bottom-medium">BACK-END</h3>
+								<img srcset="static/logo/back1x.JPG 130w, static/logo/back2x.JPG 260w"
+									 sizes="(max-width: 1100px) 15vw, (max-width: 600px) 22vw, 260px"
+									 alt="back"
+									 class="card__photo--back"
+									 src="static/logo/back1x.JPG">
+							</div>
+							<div class="card__side card__side--back">
+								<div class="card__cta">
+									<ul class="card__skills">
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/PHP" class="card__skills--link" target="_blank"><span>01</span>PHP</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/Symfony" class="card__skills--link" target="_blank"><span>02</span>Symfony</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" class="card__skills--link" target="_blank"><span>03</span>SQL</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/Python_(langage)" class="card__skills--link" target="_blank"><span>04</span>Python</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<h3 class="card__text u-margin-bottom-medium">AUTRES</h3>
+								<img srcset="static/logo/autres1x.JPG 62w, static/logo/autres2x.JPG 125w"
+									 sizes="(max-width: 1100px) 7vw, (max-width: 600px) 11vw, 125px"
+									 alt="autres"
+									 class="card__photo--others"
+									 src="static/logo/front1x.JPG">
+							</div>
+							<div class="card__side card__side--back">
+								<div class="card__cta">
+									<ul class="card__skills">
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/WampServer" class="card__skills--link" target="_blank"><span>01</span>Wampserver</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/GitHub" class="card__skills--link" target="_blank"><span>02</span>Github</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-experience" id="experience">
+
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">Expérience</h2>
+				</div>
+
+				<ul class="timeline">
+					<li>
+						<div class="timeline__badge"><i class="fa fa-briefcase"></i></div>
+						<div class="timeline__panel--container">
+							<div class="timeline__panel">
+								<div class="timeline__heading">
+									<h3>Création d'un portfolio</h3>
+									<h4>Développeur Web Junior</h4>
+									<p class="text-muted"><small class="far fa-clock">Septembre - octobre 2020</small></p>
+								</div>
+								<div class="timeline__body">
+									<p>Création d'un portfolio personnel pour mettre en avant mes divers projets passés et futurs</p>
+								</div>
+							</div>
+
+						</div>
+					</li>
+
+					<li>
+						<div class="timeline__badge"><i class="fa fa-briefcase"></i></div>
+						<div class="timeline__panel--container__inverted">
+							<div class="timeline__panel">
+								<div class="timeline__heading">
+									<h3>Soutenance - Obtention</h3>
+									<h4>Titre professionnel (niveau 5 - BTS) Développeur Web et Web Mobile</h4>
+									<p class="text-muted"><small class="far fa-clock">Août 2020</small></p>
+								</div>
+								<div class="timeline__body">
+									<p>Formation professionnelle réalisée avec WebForce3</p>
+								</div>
+							</div>
+
+						</div>
+					</li>
+
+					<li>
+						<div class="timeline__badge"><i class="fa fa-briefcase"></i></div>
+						<div class="timeline__panel--container">
+							<div class="timeline__panel">
+								<div class="timeline__heading">
+									<h3>Réalisation du projet "Alsace"</h3>
+									<h4>Projet Personnel réalisé pour le passage en soutenance</h4>
+									<p class="text-muted"><small class="far fa-clock">Juin - Juillet 2020</small></p>
+								</div>
+								<div class="timeline__body">
+									<p>Maquetter une application</p>
+									<p>Réaliser une interface utilisateur web statique et adaptable</p>
+									<p>Développer une interface utilisateur web dynamique</p>
+									<p>Créer une base de données</p>
+									<p>Développer les composants d'accès aux données</p>
+									<p>Développer la partie back-end d’une application web</p>
+								</div>
+							</div>
+
+						</div>
+					</li>
+
+					<li>
+						<div class="timeline__badge"><i class="fa fa-briefcase"></i></div>
+						<div class="timeline__panel--container__inverted">
+							<div class="timeline__panel">
+								<div class="timeline__heading">
+									<h3>Réalisation du projet "Marchés de France"</h3>
+									<h4>Projet de groupe réalisé pour le passage en soutenance</h4>
+									<p class="text-muted"><small class="far fa-clock">Mai 2020</small></p>
+								</div>
+								<div class="timeline__body">
+									<p>Créer d'une base de données</p>
+									<p>Réaliser une page de connexion et de sécurité</p>
+									<p>Gérer la sécurité du site à l'aide de Symfony</p>
+									<p>Créer une page d'ajout de données (marché et hors marché)</p>
+									<p>Réaliser une page pour la mise à jour des données utilisateurs</p>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+
+			</section>
+
+			<section class="section-education" id="education">
+
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">Formation</h2>
+				</div>
+
+				<div class="row">
+
+					<div class="col-1-of-2">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<h3 class="card__text u-margin-bottom-medium">Février - Juin 2020</h3>
+								<span><i class="fas fa-user-graduate u-margin-bottom-small"></i></span>
+								<h5 class="">TITRE PROFESSIONNEL (RNCP BAC+2)</h5>
+								<h5 class=" u-margin-bottom-big">Développeur Web et Web Mobile</h5>
+								<p>
+									Un développeur web est un informaticien spécialisé dans la programmation ou expressément impliqué dans le développement des applications du Web.
+								</p>
+
+							</div>
+							<div class="card__side card__side--back">
+								<div class="card__cta">
+									<ul class="card__skills">
+										<li class="card__education--item"><a href="https://www.wf3.fr/" class="card__education--link" target="_blank">Webforce3</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-1-of-2">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<h3 class="card__text u-margin-bottom-medium">2021 - 2023</h3>
+								<span><i class="fas fa-user-graduate u-margin-bottom-small"></i></span>
+								<h5 class="">CERTIFICATION PROFESSIONNELLE NIVEAU 6 (BAC+3)</h5>
+								<h5 class="u-margin-bottom-big">Développeur d’Applications</h5>
+								<p class="">Le concepteur développeur d’applications créé des programmes informatiques : il analyse le projet, définit les grandes lignes, réalise un cahier des charges et propose des solutions.</p>
+							</div>
+							<div class="card__side card__side--back">
+								<div class="card__cta">
+									<ul class="card__education">
+										<li class="card__education--item u-margin-bottom-big">
+											<a href="https://openclassrooms.com/fr/" class="card__education--link" target="_blank">Openclassrooms</a>
+										</li>
+										<li class="card__education--item u-margin-bottom-small">
+											<a href="https://openclassrooms.com/fr/paths/511-developpeur-dapplication-android" class="btn btn--white btn--animated" target="_blank">Programme détaillé</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="section-project" id="section-project-android">
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">Projets réalisés développeur d'application Android</h2>
+				</div>
+				<div class="row">
+					<div class="col-1-of-2">
+						<div class="project__item">
+							<h3 class="heading-tertiary u-margin-bottom-small">Présentation du dernier projet</h3>
+							<h3 class="heading-tertiary u-margin-bottom-small">Projet Personnel : Alsace (Juin - Juillet 2020)</h3>
+							<p class="paragraph">
+								L’objectif du projet et de créer un répertoire du patrimoine culturel et paysager du département avec un focus particulier sur les biens architecturaux historiques, le but étant de valoriser le pays en facilitant la lecture des ressources patrimoniales du territoire.
+							</p>
+							<p class="paragraph">
+								Les missions étaient de créer un répertoire du patrimoine pour recenser et centraliser les ressources. De mettre en évidence la diversité architecturale du bâti. Et d'apporter de la visibilité au territoire et fournir une vision d’ensemble de l’offre culturelle.
+							</p>
+							<a href="static/docs/Présentation%20HAMMER%20Julien.pdf" class="btn btn-text" target="_blank">Information supplémentaires &rarr;</a>
+						</div>
+					</div>
+					<div class="col-1-of-2">
+						<div class="composition">
+							<img src="static/images/alsaceProjectPhoto1.JPG" alt="Alsace Project photo 1" class="composition__photo composition__photo--p1">
+							<img src="static/images/alsaceProjectPhoto2.JPG" alt="Alsace Project photo 2" class="composition__photo composition__photo--p2">
+							<img src="static/images/alsaceProjectPhoto3.JPG" alt="Alsace Project photo 3" class="composition__photo composition__photo--p3">
+						</div>
+					</div>
+				</div>
+				<div id="group-popup-android">
+					<div class="row">
+						<div class="col-1-of-4">
+							<div class="project-box">
+								<h5 class="project-box__title u-margin-bottom-small">Insertion dans la base de données</h5>
+								<a href="#popupInsertionBDD">
+									<i class="btn btn-text">Voir plus &rarr;</i>
+								</a>
+							</div>
+						</div>
+						<div class="col-1-of-4">
+							<div class="project-box">
+								<h5 class="project-box__title u-margin-bottom-small">Le controller de lieux d'intérêt</h5>
+								<a href="#popupController">
+									<i class="btn btn-text">Voir plus &rarr;</i>
+								</a>
+							</div>
+						</div>
+						<div class="col-1-of-4">
+							<div class="project-box">
+								<h5 class="project-box__title u-margin-bottom-small">Le formulaire d'ajout de lieux d'intérêt</h5>
+								<a href="#popupFormulairePOI">
+									<i class="btn btn-text">Voir plus &rarr;</i>
+								</a>
+							</div>
+						</div>
+						<div class="col-1-of-4">
+							<div class="project-box">
+								<h5 class="project-box__title u-margin-bottom-small">La possibilité de télécharger plusieurs images JS/AJAX</h5>
+								<a href="#popupMultiUpload">
+									<i class="btn btn-text">Voir plus &rarr;</i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-project" id="section-project-web">
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">Projets réalisés développeur web</h2>
+				</div>
+				<div class="row">
+					<div class="col-1-of-2">
+						<div class="project__item">
+							<h3 class="heading-tertiary u-margin-bottom-small">Présentation du dernier projet</h3>
+							<h3 class="heading-tertiary u-margin-bottom-small">Projet Personnel : Alsace (Juin - Juillet 2020)</h3>
+							<p class="paragraph">
+								L’objectif du projet et de créer un répertoire du patrimoine culturel et paysager du département avec un focus particulier sur les biens architecturaux historiques, le but étant de valoriser le pays en facilitant la lecture des ressources patrimoniales du territoire.
+							</p>
+							<p class="paragraph">
+								Les missions étaient de créer un répertoire du patrimoine pour recenser et centraliser les ressources. De mettre en évidence la diversité architecturale du bâti. Et d'apporter de la visibilité au territoire et fournir une vision d’ensemble de l’offre culturelle.
+							</p>
+							<a href="static/docs/Présentation%20HAMMER%20Julien.pdf" class="btn btn-text" target="_blank">Information supplémentaires &rarr;</a>
+						</div>
+					</div>
+					<div class="col-1-of-2">
+						<div class="composition">
+							<img src="static/images/alsaceProjectPhoto1.JPG" alt="Alsace Project photo 1" class="composition__photo composition__photo--p1">
+							<img src="static/images/alsaceProjectPhoto2.JPG" alt="Alsace Project photo 2" class="composition__photo composition__photo--p2">
+							<img src="static/images/alsaceProjectPhoto3.JPG" alt="Alsace Project photo 3" class="composition__photo composition__photo--p3">
+						</div>
+					</div>
+				</div>
+				<div id="group-popup-web">
+					<div class="row">
+						<div class="col-1-of-4">
+							<div class="project-box">
+								<h5 class="project-box__title u-margin-bottom-small">Insertion dans la base de données</h5>
+								<a href="#popupInsertionBDD">
+									<i class="btn btn-text">Voir plus &rarr;</i>
+								</a>
+							</div>
+						</div>
+						<div class="col-1-of-4">
+							<div class="project-box">
+								<h5 class="project-box__title u-margin-bottom-small">Le controller de lieux d'intérêt</h5>
+								<a href="#popupController">
+									<i class="btn btn-text">Voir plus &rarr;</i>
+								</a>
+							</div>
+						</div>
+						<div class="col-1-of-4">
+							<div class="project-box">
+								<h5 class="project-box__title u-margin-bottom-small">Le formulaire d'ajout de lieux d'intérêt</h5>
+								<a href="#popupFormulairePOI">
+									<i class="btn btn-text">Voir plus &rarr;</i>
+								</a>
+							</div>
+						</div>
+						<div class="col-1-of-4">
+							<div class="project-box">
+								<h5 class="project-box__title u-margin-bottom-small">La possibilité de télécharger plusieurs images JS/AJAX</h5>
+								<a href="#popupMultiUpload">
+									<i class="btn btn-text">Voir plus &rarr;</i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-contact" id="contact">
+
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">Me contacter</h2>
+				</div>
+				<div class="row">
+					<div class="col-1-of-4">
+						<div class="contact-box">
+							<a href="https://www.linkedin.com/in/julien-hammer-7b85b5b4/" target="_blank">
+								<i class="contact-box__icon icon-basic-world logoContact"></i>
+							</a>
+							<h3 class="heading-tertiary u-margin-bottom-small">Linkedin</h3>
+						</div>
+					</div>
+					<div class="col-1-of-4">
+						<div class="contact-box">
+							<a href="mailto:hammerjulienpro@gmail.com">
+								<i class="contact-box__icon icon-basic-mail logoContact"></i>
+							</a>
+							<h3 class="heading-tertiary u-margin-bottom-small">E-mail</h3>
+						</div>
+					</div>
+					<div class="col-1-of-4">
+						<div class="contact-box">
+							<a href="https://github.com/rouge13" target="_blank">
+								<i class="contact-box__icon icon-basic-link logoContact"></i>
+							</a>
+							<h3 class="heading-tertiary u-margin-bottom-small">Github</h3>
+						</div>
+					</div>
+<!--					<div class="col-1-of-4">-->
+<!--						<div class="contact-box">-->
+<!--							<a onclick="hidePhoneNumber()">-->
+<!--								<i class="contact-box__icon icon-basic-smartphone logoContact"></i>-->
+<!--							</a>-->
+<!--							<h3 class="heading-tertiary u-margin-bottom-small">Mobile</h3>-->
+<!--							<p class="contact-box__content" id="phoneNumber">06.06.87.10.04</p>-->
+<!--						</div>-->
+<!--					</div>-->
+					<div class="col-1-of-4">
+						<div class="contact-box">
+							<a onclick="hideLocation()">
+								<i class="contact-box__icon icon-basic-geolocalize-01 logoContact"></i>
+							</a>
+							<h3 class="heading-tertiary u-margin-bottom-small">localisation</h3>
+							<p class="contact-box__content" id="location">Strasbourg</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+
+		<footer class="footer">
+			<div class="footer__logo-box">
+				<img class="footer__logo" src="static/logo/JH.png" alt="Logo">
+			</div>
+			<div class="footer__navigation">
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a onclick="smoothScroll('#header', 3000)">
+							<i class='sectionFooter footer__link far fa-arrow-alt-circle-up'></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<h5 class="footer__copyright">
+					Julien HAMMER COPYRIGHT <i class="fa fa-copyright"></i>2023 - PORTFOLIO
+				</h5>
+			</div>
+		</footer>
+
+		<div class="popup" id="popupInsertionBDD">
+			<div class="popup__content">
+				<div class="popup__right">
+					<a href="#group-popup-web" class="popup__close">&times;</a>
+					<h2 class="u-margin-bottom-small">Insertion dans la base de données</h2>
+					<img srcset="static/images/insertionBDD1x.jpg 543w, static/images/insertionBDD2x.jpg 1086w"
+						 sizes="(max-width: 1100px) 49vw, (max-width: 600px) 90vw, 1086px"
+						 alt="insertion BDD"
+						 class="popup__img"
+						 src="static/images/insertionBDD1x.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popupController">
+			<div class="popup__content">
+				<div class="popup__right">
+					<a href="#group-popup-web" class="popup__close">&times;</a>
+					<h2 class="u-margin-bottom-small">Le controller de lieu d'intérêt</h2>
+					<img srcset="static/images/controllerPOI1x.jpg 559w, static/images/controllerPOI2x.jpg 1119w"
+						 sizes="(max-width: 1100px) 51vw, (max-width: 600px) 93vw, 1119px"
+						 alt="controller POI"
+						 class="popup__img"
+						 src="static/images/controllerPOI1x.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popupFormulairePOI">
+			<div class="popup__content">
+				<div class="popup__right">
+					<a href="#group-popup-web" class="popup__close">&times;</a>
+					<h2 class="u-margin-bottom-small">Le formulaire d'ajout de lieu d'intérêt</h2>
+					<img srcset="static/images/formulairePOI1x.jpg 273w, static/images/formulairePOI2x.jpg 546w"
+						 sizes="(max-width: 1100px) 25vw, (max-width: 600px) 46vw, 546px"
+						 alt="formulaire POI"
+						 class="popup__img"
+						 src="static/images/formulairePOI1x.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popupMultiUpload">
+			<div class="popup__content">
+				<div class="popup__right">
+					<a href="#group-popup-web" class="popup__close">&times;</a>
+					<h2 class="u-margin-bottom-small">La possibilité de télécharger plusieurs images JS/AJAX</h2>
+					<img srcset="static/images/multiUploadJS1x.jpg 374w, static/images/multiUploadJS2x.jpg 749w"
+						 sizes="(max-width: 1100px) 34vw, (max-width: 600px) 62vw, 749px"
+						 alt="multiUpload"
+						 class="popup__img"
+						 src="static/images/multiUploadJS1x.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+<script type="text/javascript">
+	var pageTracker = _gat._getTracker("UA-3753241-1");
+	pageTracker._initData();
+	pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+.section-skills {
+  background-color: $color-secondary;
+  padding: 10rem 0 25rem 0;
+  margin-top: -10rem;
+
+  @include respond(tab-port) {
+    padding: 10rem 0 30rem 0;
+  }
+}
+
+.section-experience {
+  padding: 10rem 0 25rem 0;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-quaternary-light, 0.8),
+                  rgba($color-quaternary-dark, 0.8)),
+  url("/static/images/backgroundCode.jpg");
+
+  background-size: cover;
+  background-position: center;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+  & > * { // For selecting all the direct childs
+    transform: skewY(7deg);
+  }
+
+  @include respond(tab-port) {
+    padding: 5rem 0 20rem 0;
+  }
+}
+
+.section-education {
+  background-color: $color-secondary;
+  padding: 20rem 0 25rem 0;
+  margin-top: -10rem;
+
+  @include respond(tab-port) {
+    padding: 15rem 0 20rem 0;
+  }
+}
+
+
+
+.section-project {
+  padding: 20rem 0;
+  color: $color-secondary;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-quaternary-light, 0.8),
+                  rgba($color-quaternary-dark, 0.8)),
+  url("/static/images/keyboard.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+    & > * { // For selecting all the direct childs
+      transform: skewY(7deg);
+    }
+
+  @include respond(tab-port) {
+    padding: 15rem 0 15rem 0;
+  }
+  }
+
+.section-contact {
+  background-color: $color-secondary;
+  padding: 20rem 0;
+  margin-top: -10rem;
+
+  @include respond(tab-port) {
+    padding: 15rem 0;
+  }
+}
+
+.footer {
+  padding: 5rem 0;
+  margin-top: -10rem;
+
+  @include respond(tab-port) {
+    padding: 2rem 0;
+  }
+}
+
+

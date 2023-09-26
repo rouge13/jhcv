@@ -1,0 +1,92 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+  border-radius: 3rem;
+
+
+
+  &__text {
+    padding-top: 3rem;
+  }
+
+  &__side {
+
+    color: $color-secondary;
+    font-size: 2rem;
+    height: 50rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    border-radius: 3rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-tertiary, .15);
+
+    @include respond(tab-port) {
+      margin-top: 2rem;
+    }
+
+    &--front {
+      background-color: $color-secondary;
+      color: $color-tertiary;
+    }
+
+    &--back {
+      background-color: $color-green;
+
+
+      color: $color-secondary;
+      transform: rotateY(180deg);
+
+    }
+  }
+
+  &:hover &__side--front {//.card:hover .card__side
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {//.card:hover .card__side
+    transform: rotateY(0);
+  }
+
+
+
+  @include respond(tab-port) {
+    padding: 4rem;
+    height: auto;
+    border-radius: 3rem;
+    margin-bottom: $gutter-vertical-small;
+    box-shadow: 0 1.5rem 4rem rgba($color-tertiary, .15);
+
+    &__side {
+      font-size: 2rem;
+      height: auto;
+      position: relative;
+      text-align: center;
+      box-shadow: none;
+
+      &--back {
+       transform: rotateY(0deg);
+
+      }
+    }
+
+    &:hover &__side--front {//.card:hover .card__side
+      transform: rotateY(0);
+    }
+
+
+  }
+
+}
+
+
+
