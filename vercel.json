@@ -2,7 +2,7 @@
 
   "builds": [{
 
-    "src": "jhcv/wsgi.py",
+    "src": "jhcv-new/wsgi.py",
 
     "use": "@vercel/python",
 
@@ -16,7 +16,7 @@
 
       "src": "/(.*)",
 
-      "dest": "jhcv/wsgi.py"
+      "dest": "jhcv-new/wsgi.py"
 
     }
 
