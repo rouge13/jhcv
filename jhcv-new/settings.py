@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-import mimetypes
-mimetypes.add_type("text/css", ".css", True)
+# import mimetypes
+# mimetypes.add_type("text/css", ".css", True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,6 +26,9 @@ SECRET_KEY = 'django-insecure-%c9nq$72-2zz7$--81smv29f!2-_9!opr+ov9!f_7gfwd7^i&3
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+
+# FOR LOCALHOST WEBSITE
+# DEBUG = True
 
 ALLOWED_HOSTS = ['.vercel.app', 'localhost']
 
