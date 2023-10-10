@@ -8,18 +8,27 @@
 
     "config": { "maxLambdaSize": "15mb", "runtime": "python3.11" }
 
-  }],
+  },
+    {
+      "src": "build.sh",
+      "use": "@vercel/static",
+      "config": {
+        "distDir": "staticfiles",
+      }
+    }
+  ],
 
   "routes": [
-
     {
-
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
       "src": "/(.*)",
-
       "dest": "jhcv-new/wsgi.py"
-
     }
 
-  ]
+  ],
+  "outputDirectory": "staticfiles"
 
 }
